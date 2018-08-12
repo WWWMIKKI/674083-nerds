@@ -2,11 +2,105 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+     <nav class="main-navigation">
+       <a class="main-header-logo">
+        <img src="img/index-logo.psd" width="368" heigt="153" alt="Логип студии Нёрдс">
+       </a>    
+         <ul class="site-navigation">
+          <li><a href="info.html">Студия</a></li>
+          <li><a href="client.html">Клиенты</a></li>
+          <li><a href="nerds-catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li> 
+         </ul>
+       <ul class="basket-navigation">
+         <li class="basket-link">Корзина</li>    
+       </ul>    
+     </nav>
+    </header>
+    <main class="container">
+     <h1 class="visually-hidden">Дизайн-cтудия Нёрдс</h1>
+      <section class="features">
+        <h2 class="visually-hidden">Преймущества</h2>
+        <h3 class="features">Долго, дорого, скорпулезно.</h3> 
+        <p class="features-info">Математически выверенный дизайн для вашего сайта или приложения.</p>
+          <a class="features-info-link" href="info.html">Узнать больше</a>
+      </section> 
+      <section class="gallery">
+       <h2 class="visually-hidden">Галерея</h2>
+       <div class="gallery-content">
+         <a href="#"><img src="img/gallery1.psd" width="286" height="160" alt="mobile"></a>
+       </div>
+       <button class="button gallery-button gallery-button-foto1" type="button">Слайд1</button>
+       <button class="button gallery-button gallery-button-foto2" type="button">Слайд2</button>
+       <button class="button gallery-button gallery-button-foto3" type="button">Слайд3</button> 
+      </section>
+      <section class="service">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="service-list">
+       <li class="service-web">
+           <h3>ВЕБ-САЙТЫ</h3>
+           <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
+           <a href="web.html" class="sevice-web-link">Заказать</a>
+        </li>
+        <li class="service-applications">
+           <h3>ПРИЛОЖЕНИЯ</h3>
+           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+           <a href="applications.html" class="sevice-applications-link">Заказать</a>
+        </li>
+        <li class="service-presentation">
+           <h3>ПРЕЗЕНТАЦИИ</h3>
+           <p>Вы даже не подозреваете, насколько вы изумительны</p>
+           <a href="presentation.html" class="sevice-presentation-link">Заказать</a>
+        </li>
+       </ul>
+      </section>
+      <article class="features">
+        <p class="features-concept"><b>Мы - мальнькая, но гордая дизайн-студия из Краснодара.</b></p>
+        <p class="features-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <img class="features-statistics" src="img/statistics.psd" alt="Статистика">
+      </article>
+      <section class="client">
+       <ul class="client-list">
+       <li><a class="client-htmlakademy" href="https://htmlacademy.ru/intensive/htmlcss">
+           <img src="img/htmlacademy.psd" width="138" height="153" alt="Htmlacademy"></a>
+       <li><a class="client-barbershop" href="http://barbershop-borodinski.webflow.io/">
+           <img src="img/barbershop.psd"  width="138" height="153" alt="barbershop"></a>
+       <li><a class="client-pink" href="https://pink.ru/">
+           <img src="img/pink.psd"  width="138" height="153" alt="pink"></a>
+       <li><a class="client-mishka" href="https://mishka.ru/">
+           <img src="img/mishka.psd"  width="138" height="153" alt="mishka"></a>
+       </ul>
+      </section>
+      </main>  
+      <footer class="main-footer">
+       <div class="maps">
+       <section class="maps-contacts">
+       <p class="maps-contacts-name">
+           <span class="name-logo">NЁRDS DESIGN STUDIO</span></p>
+       <p class="maps-conatacs-adress"> 191186, Санкт-Петербург,<br>
+           ул.Конюшенная,д.19/8</p>      
+        <p class="maps-contacts-phone">
+        тел. +7(812)275-75-75
+        </p> 
+        <a href="mail.html">Напишите нам</a>
+       </section>
+       </div>  
+       <div class="footer-social">
+        <ul>
+            <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
+            <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+        </ul>    
+        <b>Давайте дружить, это выгодно!</b>
+       </div>
+        <p class="footer-promo">
+        Скидка 10% для друзей из социальных сетей. 
+        </p>
+      </footer>
 
   </body>
 </html>
