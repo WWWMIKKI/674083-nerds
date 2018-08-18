@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
-    </head>
+  </head>
   <body>
     <header class="main-header">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.psd" width="368" heigt="153" alt="Логип студии Нёрдс">
@@ -17,21 +18,20 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="basket-navigation">
-          <li class="basket-link"><a class="basket-link" href="Basket.html">Корзина</a>></li>
+          <li class="basket-link"><a class="basket-link" href="Basket.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="sort">
         <h2 class="sort">Сортировать</h2>
-          <ul>
-            <li class="sort-price-current"><a class="sort-price-link-current" href="#">ПО ЦЕНЕ</a></li>
-            <li class="sort-type"><a class="sort-type-link" href="#">ПО ТИПУ</a></li>
-            <li class="sort-name"><a class="sort-name-link" href="#">ПО НАЗВАНИЮ</a></li>
-            <li class="sort-down"><a class="sort-down-link" href="#">ПО УБЫВАНИЮ</a></li>
-            <li class="sort-up"><a class="sort-up-link" href="#">ПО ВОЗРАСТАНИЮ</a></li>
-          </ul>
+        <ul>
+          <li class="sort-price-current"><a class="sort-price-link-current" href="#">ПО ЦЕНЕ</a></li>
+          <li class="sort-type"><a class="sort-type-link" href="#">ПО ТИПУ</a></li>
+          <li class="sort-name"><a class="sort-name-link" href="#">ПО НАЗВАНИЮ</a></li>
+          <li class="sort-down"><a class="sort-down-link" href="#">ПО УБЫВАНИЮ</a></li>
+          <li class="sort-up"><a class="sort-up-link" href="#">ПО ВОЗРАСТАНИЮ</a></li>
+        </ul>
       </section>
 
       <div class="filters">
@@ -60,104 +60,106 @@
             <label for="galeria">Галерея</label>
             <label for="basket">Корзина</label>
           </section>
+
           <a class="filters-link" href="#">ПОКАЗАТЬ</a>
       </div>
 
-     <section class="catalog">
-       <h2 class="visually-hidden">Список шаблонов</h2>
-         <ul class="catalog-list">
-            <li class="calog-item-current">
-              <h3><a href="#">SEDONA</a></h3>
-              <span class="catalog-item-title">Информационный сайт для туристов</span>
-              <p class="catalog-item-price">
-              <a href="sedona1.html"><img src="img/sedona.psd" width="330" height="220" alt="SEDONA"></a>
-              <a class="button" href="#">9 900руб</a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item-current">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-senona" src="img/sedona.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">SEDONA</h3></a>
+              <p class="catalog-item-desc">Информационный сайт для туристов</p>
+              <a href="#"> Заказать 9 900руб.</a>
+            </div>
+          </li>
 
-            <li class="calog-item">
-              <h3><a href="#">PINK</a></h3>
-              <p class="catalog-item-price">
-                <a href="pink.html"><img src="img/pink.psd" width="330" height="220" alt="PINK"></a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
+          <li class="calog-item">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-pink" src="img/pink.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">PINK</h3></a>
+              <p class="catalog-item-desc">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+              <a class="visually-hidden" href="#">00руб.</a>
+            </div>
+          </li>
 
-            <li class="calog-item">
-              <h3><a href="#">Borodinski</a></h3>
-              <p class="catalog-item-price">
-              <a href="borodinski.html"><img src="img/borodinski.psd" width="330" height="220" alt="borodinski"></a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
+          <li class="calog-item">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-pink" src="img/borodinski.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">Borodinski</h3></a>
+              <p class="catalog-item-desc">Модные усы</p>
+              <a class="visually-hidden" href="#">00руб.</a>
+            </div>
+          </li>
 
-            <li class="calog-item">
-              <h3><a href="#">Mishka</a></h3>
-              <p class="catalog-item-price">
-              <a href="mishka.html"><img src="img/mishka.psd" width="330" height="220" alt="mishka"></a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
+          <li class="calog-item">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-pink" src="img/mishka.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">MISHKA</h3></a>
+              <p class="catalog-item-desc">Плюшевые друзья</p>
+              <a class="visually-hidden" href="#">00руб.</a>
+            </div>
+          </li>
 
-            <li class="calog-item">
-              <h3><a href="#">A+</a></h3>
-              <p class="catalog-item-price">
-              <a href="Aplus.html"><img src="img/aplus.psd" width="330" height="220" alt="A+"></a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
-            <li class="calog-item">
-              <h3><a href="#">Кваст</a></h3>
-              <p class="catalog-item-price">
-              <a href="Kvast.html"><img src="img/kvast.psd" width="330" height="220" alt="KVAST"></a>
-              </p>
-              <button type="button" class="button catalog-button catalog-buttom-foto1">Слайд1</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto2">Слайд2</button>
-              <button type="button" class="button catalog-button catalog-buttom-foto3">Слайд3</button>
-            </li>
-          </ul>
+          <li class="calog-item">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-pink" src="img/aplus.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">A+</h3></a>
+              <p class="catalog-item-desc">Учеба никогда ещё, не была такой интересной</p>
+              <a class="visually-hidden" href="#">00руб.</a>
+            </div>
+          </li>
+          <li class="calog-item">
+            <img class="catalog-header"src="#" width="330" height="20" alt="">
+            <img class="catalog-item-pink" src="img/kvast.psd" width="330" height="220" alt="">
+            <div class="calog-item-info">
+              <a href=""><h3 class="catalog-title">KVAST</h3></a>
+              <p class="catalog-item-desc">Кратовый квас всему голова!</p>
+              <a class="visually-hidden" href="#">00руб.</a>
+            </div>
+          </li>
+        </ul>
 
-          <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
-          </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+        </ul>
       </section>
     </main>
-      <footer class="main-footer">
-        <div class="maps">
-          <section class="maps-contacts">
-            <p class="maps-contacts-name">
-            <span class="name-logo">NЁRDS DESIGN STUDIO</span></p>
-            <p class="maps-conatacs-adress"> 191186, Санкт-Петербург,<br>ул.Конюшенная,д.19/8</p>
-            <p class="maps-contacts-phone">тел. +7(812)275-75-75</p>
-            <a href="mail.html">Напишите нам</a>
-          </section>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button-vk" href="#">Вконтакте</a></li>
-            <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
-            <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
-          </ul>
-          <b>Давайте дружить, это выгодно!</b>
-        </div>
-        <p class="footer-promo">
-        Скидка 10% для друзей из социальных сетей.
+    <footer class="main-footer">
+      <div class="maps">
+        <p class="maps-name">
+          <span class="name-logo">NЁRDS DESIGN STUDIO</span>
         </p>
-      </footer>
-
+        <p class="maps-adress">
+          191186, Санкт-Петербург,<br>
+          ул.Конюшенная,д.19/8
+        </p>
+        <p class="maps-phone">
+          тел. +7(812)275-75-75
+        </p>
+        <a class="maps-contacts-mail" href="mail.html">Напишите нам</a>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
+          <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
