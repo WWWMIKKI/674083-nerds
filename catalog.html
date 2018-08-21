@@ -33,37 +33,46 @@
           <li class="sort-up"><a class="sort-up-link" href="#">ПО ВОЗРАСТАНИЮ</a></li>
         </ul>
       </section>
-
-      <div class="filters">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <section class="filters-price">
-            <!-- Здесь будет форма -->
-            <h3>СТОИМОСТЬ</h3>
+      <form class="filters-data" action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value">
+          <fieldset>
+            <legend>СТОИМОСТЬ</legend>
+            <input type="range" id="price" name="price" min="0" max="15000" step="1000"><br>
             <label for="min">ОТ</label>
+            <input type="text" name="min" id="min" value="0">
             <label for="max">ДО</label>
-          </section>
-
-          <section class="filters-netting">
-            <!-- Здесь будет форма -->
-            <h3>СЕТКА</h3>
+            <input type="text" name="min" id="max" value="15000">
+          </fieldset>
+          <fieldset>
+            <legend>СЕТКА</legend>
+            <input type="radio" name="grid" value="Адаптивная" id="adaptive" checked>
             <label for="adaptive">Адаптивная</label>
+            <br>
+            <input type="radio" name="grid" value="Фиксированная" id="fixed">
             <label for="fixed">Фиксированная</label>
+            <br>
+            <input type="radio" name="grid" value="Резиновая" id="stretch">
             <label for="stretch">Резиновая</label>
-          </section>
-
-          <section class="filters-specificity">
-            <!-- Здесь будет форма -->
-            <h3>ОСОБЕННОСТИ</h3>
+          </fieldset>
+          <fieldset>
+            <legend>ОСОБЕННОСТИ</legend>
+            <input type="checkbox" id="slider" checked>
             <label for="slider">Слайдер</label>
+            <br>
+            <input type="checkbox" id="advantage">
             <label for="advantage">Блок преимуществ</label>
+            <br>
+            <input type="checkbox" id="news" checked>
             <label for="news">Новости</label>
+            <br>
+            <input type="checkbox" id="galeria">
             <label for="galeria">Галерея</label>
+            <br>
+            <input type="checkbox" id="basket">
             <label for="basket">Корзина</label>
-          </section>
-
-          <a class="filters-link" href="#">ПОКАЗАТЬ</a>
-      </div>
-
+            <br>
+          </fieldset>
+          <button class="filters post">ПОКАЗАТЬ</button>
+      </form>
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
@@ -143,6 +152,18 @@
         <p class="contacts-phone">тел.<a href="tel:+78122757575">+7(812)275-75-75</a></p>
         <a class="contacts-mail" href="mail.html">Напишите нам</a>
       </div>
+      <form classs="visually-hidden feedback" action="https://echo.htmlacademy.ru" method="get">
+        <label for="username">Ваше имя</label>
+        <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
+        <br>
+        <label for="usermail">Ваш e-mail</label>
+        <input type="email" name="email" id="usermail" placeholder="email@example.com">
+        <br>
+        <label for="usercomment">Текст письма</label>
+        <textarea name="comment" id="usercomment" rows="6" cols="30" placeholder="В свободной форме">В свободной форме</textarea>
+        <br>
+        <input type="submit" value="ОТПРАВИТЬ">
+      </form>
       <div class="footer-social">
         <ul>
           <li><a class="social-button-vk" href="#">Вконтакте</a></li>
