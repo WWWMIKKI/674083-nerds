@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,7 +28,7 @@
     <main class="container">
       <section class="sort">
         <h2 class="sort">Сортировать</h2>
-        <ul>
+        <ul class="sort-list">
           <li class="sort-price-current"><a class="sort-price-link-current" href="#">ПО ЦЕНЕ</a></li>
           <li class="sort-type"><a class="sort-type-link" href="#">ПО ТИПУ</a></li>
           <li class="sort-name"><a class="sort-name-link" href="#">ПО НАЗВАНИЮ</a></li>
@@ -34,7 +37,7 @@
         </ul>
       </section>
       <form class="filters-data" action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value">
-          <fieldset>
+          <fieldset class="filters-price">
             <legend>СТОИМОСТЬ</legend>
             <input type="range" id="price" name="price" min="0" max="15000" step="1000"><br>
             <label for="min">ОТ</label>
@@ -77,61 +80,61 @@
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item-current">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-senona" src="img/sedona.jpg" width="360" height="576" alt="design-sedona">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">SEDONA</h3></a>
               <p class="catalog-item-desc">Информационный сайт для туристов</p>
-              <a href="#"> Заказать 9 900руб.</a>
+              <a class="catalog-booking" href= "#"> Заказать 9 900руб.</a>
             </div>
           </li>
 
           <li class="calog-item">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-pink" src="img/pink.jpg" width="360" height="576" alt="design-pink">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">PINK</h3></a>
               <p class="catalog-item-desc">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-              <a class="visually-hidden" href="#">00руб.</a>
+              <a class="catalog-booking visually-hidden" href="#">00руб.</a>
             </div>
           </li>
 
           <li class="calog-item">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-pink" src="img/barbershop.jpg" width="360" height="576" alt="design-borodinski">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">Borodinski</h3></a>
               <p class="catalog-item-desc">Модные усы</p>
-              <a class="visually-hidden" href="#">00руб.</a>
+              <a class="catalog-booking visually-hidden" href="#">00руб.</a>
             </div>
           </li>
 
           <li class="calog-item">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-pink" src="img/mishka.jpg" width="360" height="576" alt="design-mishka">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">MISHKA</h3></a>
               <p class="catalog-item-desc">Плюшевые друзья</p>
-              <a class="visually-hidden" href="#">00руб.</a>
+              <a class="catalog-booking visually-hidden" href="#">00руб.</a>
             </div>
           </li>
 
           <li class="calog-item">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-pink" src="img/aplus.jpg" width="360" height="576" alt="design-aplus">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">A+</h3></a>
               <p class="catalog-item-desc">Учеба никогда ещё, не была такой интересной</p>
-              <a class="visually-hidden" href="#">00руб.</a>
+              <a class="catalog-booking visually-hidden" href="#">00руб.</a>
             </div>
           </li>
           <li class="calog-item">
-            <img class="catalog-header" src="img/header-prod.png" width="360" height="40" alt="header-prod">
+            <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="header-prod">
             <img class="catalog-item-pink" src="img/kvast.jpg" width="360" height="576" alt="design-kvast">
             <div class="calog-item-info">
               <a href=""><h3 class="catalog-title">KVAST</h3></a>
               <p class="catalog-item-desc">Кратовый квас всему голова!</p>
-              <a class="visually-hidden" href="#">00руб.</a>
+              <a class="catalog-booking visually-hidden" href="#">00руб.</a>
             </div>
           </li>
         </ul>

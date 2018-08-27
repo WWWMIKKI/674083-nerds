@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
       <header class="main-header">
         <h1 class="visually-hidden">Дизайн-cтудия Нёрдс</h1>
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" heigt="65" alt="Логип студии Нёрдс">
           </a>
           <ul class="site-navigation">
@@ -25,7 +28,7 @@
       <main class="container">
         <section class="features">
           <h2 class="visually-hidden">Преймущества</h2>
-          <h3 class="features">Долго, дорого, скорпулезно.</h3>
+          <h3 class="features">Долго, дорого, скрупулезно.</h3>
           <p class="features-info">Математически выверенный дизайн для вашего сайта или приложения.</p>
           <a class="features-info-link" href="info.html">Узнать больше</a>
         </section>
@@ -69,21 +72,21 @@
         <section class="about-us">
           <b class="about-us-concept">Мы - мальнькая, но гордая дизайн-студия из Краснодара.</b>
           <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about-us-options"><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</b></p>
+          <p class="about-us-options"><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
           <ul class="about-us-options-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для IOS и Android</li>
             <li>Слайдшоу и видео для коорперативных презентаций</li>
           </ul>
           <b class="about-us-date">C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b>
-          <p class="about-us-logo"><img src="img/nerds.png" alt="Логотип студии Нёрдс"></p>
+          <p class="about-us-logo"><img src="img/nerds.jpg" alt="Логотип студии Нёрдс"></p>
           <table class="about-us-statistics">
-            <tr>
-              <td>146%</td>
-              <td>100%</td>
-              <td>50%</td>
+            <tr class="statistics-percent">
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
             </tr>
-            <tr>
+            <tr class="statistics-parameres">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -123,20 +126,23 @@
           <p class="contacts-phone">тел.<a href="tel:+78122757575">+7(812)275-75-75</a></p>
           <a class="contacts-mail" href="mail.html">Напишите нам</a>
         </div>
-        <form classs="visually-hidden feedback" action="https://echo.htmlacademy.ru" method="get">
-          <label for="username">Ваше имя</label>
-          <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
-          <br>
-          <label for="usermail">Ваш e-mail</label>
-          <input type="email" name="email" id="usermail" placeholder="email@example.com">
-          <br>
-          <label for="usercomment">Текст письма</label>
-          <textarea name="comment" id="usercomment" rows="6" cols="30" placeholder="В свободной форме">В свободной форме</textarea>
-          <br>
-          <input type="submit" value="ОТПРАВИТЬ">
-        </form>
+        <div class="feedback">
+          <h3>Напишите нам</h3>
+          <form classs="visually-hidden feedback" action="https://echo.htmlacademy.ru" method="get">
+            <label for="username">Ваше имя</label>
+            <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
+            <br>
+            <label for="usermail">Ваш e-mail</label>
+            <input type="email" name="email" id="usermail" placeholder="email@example.com">
+            <br>
+            <label for="usercomment">Текст письма</label>
+            <textarea name="comment" id="usercomment" rows="6" cols="30" placeholder="В свободной форме">В свободной форме</textarea>
+            <br>
+            <input type="submit" value="ОТПРАВИТЬ">
+          </form>
+        </div>
         <div class="footer-social">
-          <ul>
+          <ul class="social-button">
             <li><a class="social-button-vk" href="#">Вконтакте</a></li>
             <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
             <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
