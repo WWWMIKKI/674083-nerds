@@ -477,7 +477,7 @@ a {
   display: block;
 }
 .slider-item:nth-child(1) {
-  background-image: url("img/slide1.png");
+  background-image: url(" img/slide1.png");
 }
 .slider-item h3{
   font-size: 55px;
