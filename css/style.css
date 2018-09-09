@@ -713,7 +713,7 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  background-color:#eeeeee;
+  background-color:#ffffff;
 }
 
 .visually-hidden {
@@ -1465,13 +1465,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
 }
 
-.calog-item-info {
+.catalog-item-info {
   position: absolute;
   width: 360px;
   height: 231px;
   background-color: #eeeeee;
   margin-left: 0px;
   margin-top: -240px;
+  opacity: 0;
 }
 
 .centr-item {
@@ -1538,9 +1539,20 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+
+
+.catalog-item-info:hover,
+.catalog-item-info:focus .catalog-item{
+  opacity: 1;
+}
+
+
 .catalog-item li {
   margin-bottom: 33px;
 }
+
+
+
 
 .info-active {
   opacity: 1;
@@ -1606,9 +1618,77 @@ input[type="radio"].visually-hidden {
 }
 
 .close-form:hover,
-.close-form:focus {
-  opacity: 1;
+.close-form:focus path {
+  fill: #fb565a;
 }
+
+
+.close-form:active path {
+  opacity: 0.1;
+}
+
+.feedback-close {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.name label {
+  margin-bottom: 12px;
+}
+
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback textarea {
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+}
+
+.feedback input[type="text"]:hover,
+.feedback input[type="email"]:hover,
+.feedback textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.feedback input[type="text"]:focus,
+.feedback input[type="email"]:focus,
+.feedback textarea:focus {
+  border: 2px solid #000000;
+}
+
+.feedback input[type="text"]:active,
+.feedback input[type="email"]:active,
+.feedback textarea:invalid {
+  border: 2px solid #e74246;
+}
+
+.feedback-data {
+  display: block;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  background-color: #fb565a;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 5%;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
