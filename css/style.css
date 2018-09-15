@@ -98,17 +98,23 @@ a {
 .service-list h3 {
   font-size: 24px;
   line-height: 30px;
+  margin-top: 18px;
+  margin-bottom: 0;
 }
 
 .service-list p {
   font-size: 16px;
   line-height: 24px;
+  text-transform: none;
+  padding-top: -10px;
+  width: 260px;
+  padding-bottom: 16px;
 }
 
 .sevice-web-link {
   display: block;
   width: 160px;
-  padding: 13px 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -119,6 +125,7 @@ a {
   border: none;
   background-color: #fb565a;
   margin-bottom: 73px;
+  border-radius: 5%;
 }
 
 .sevice-web-link:focus {
@@ -139,7 +146,7 @@ a {
 .sevice-applications-link {
   display: block;
   width: 160px;
-  padding: 13px 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -149,8 +156,9 @@ a {
   border: 3px;
   border: none;
   background-color:#00ca74;
-  margin-bottom: 122px;
-}
+  margin-bottom: 154px;
+  border-radius: 5%;
+  }
 
 .sevice-applications-link:focus {
   color:#ffffff;
@@ -170,7 +178,7 @@ a {
 .sevice-presentation-link {
   display: block;
   width: 160px;
-  padding: 13px 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -181,6 +189,8 @@ a {
   border: none;
   background-color:#efc84a;
   margin-bottom: 122px;
+  border-radius: 5%;
+
 }
 
 .sevice-presentation-link:focus {
@@ -201,23 +211,39 @@ a {
 .about-us-concept {
   font-size: 45px;
   line-height: 45px;
+  text-transform: none;
 }
 
 .about-us-description {
   font-size: 16px;
   line-height: 24px;
+  text-transform: none;
+  padding-top: 18px;
+  padding-bottom: 23px;
 }
 
-.about-us-options {
+b .about-us-options {
   font-size: 16px;
+
 }
 
-.about-us-options-list {
+.about-us-options-list li {
   list-style: none;
+  text-transform: none;
+  margin-top: 24px;
+  padding-left: 0px;
+  margin-left: -5px;
 }
 
 .about-us-date {
   font-weight: 700;
+  padding-left: 17px;
+}
+
+.about-us-logo {
+  padding-top: 0px;
+  padding-bottom: 12px;
+
 }
 
 .statistics-percent {
@@ -234,8 +260,13 @@ a {
   font-weight: 400;
 }
 
+.statistics-item {
+  padding-right: 17px;
+}
+
 .client-list {
   list-style: none;
+  align-items: center;
 }
 
 .client-list a {
@@ -254,10 +285,38 @@ a {
   opacity: 0.1;
 }
 
+.client-item::before {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #231f20;
+  position: absolute;
+  top: 56px;
+  right: -250px;
+  display: block;
+  top: 56px;
+  right: -251px;
+}
+
+.client-item:last-child::before {
+  width: 0px;
+}
+
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: -6px;
+
+}
+
+.contacts-adress {
+  margin-top: 23px;
+  margin-left: 2px;
+}
+
+.contacts-phone {
+  margin-top: 3px;
 }
 
 .contacts-adress,
@@ -268,12 +327,14 @@ a {
   line-height: 18px;
   opacity: 0.5;
   text-decoration: none;
+  text-transform: none;
+
 }
 
 .contacts-mail {
   display: block;
   width: 219px;
-  padding: 13px 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -283,6 +344,7 @@ a {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+  margin-top: 20px;
 }
 
 .contacts-mail:hover,
@@ -306,11 +368,21 @@ a {
 .footer-promo b {
   font-size: 36px;
   line-height: 36px;
+  text-transform: none;
+  margin-top: 2px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 28px;
 }
 
 .footer-promo p {
   font-size: 16px;
   line-height: 22px;
+  text-transform: none;
+  display: block;
+  padding-left: 40px;
+  padding-top: 0px;
+  margin-top: -15px;
 }
 
 .feedback h3 {
@@ -368,7 +440,10 @@ a {
   align-items: center;
   width: 360px;
   margin-top: -37px;
-  margin-bottom: 59px;
+  margin-bottom: 99px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .sort-name {
@@ -510,6 +585,7 @@ a {
   line-height: 18px;
   align-items: flex-start;
   margin-left: 40px;
+  margin-top: -25px;
 }
 .pagination-item {
   margin-right: 10px;
@@ -517,6 +593,7 @@ a {
 
 .pagination-item:last-child {
   margin-right: 0;
+  margin-left: 57px;
 }
 
 .pagination-list a {
@@ -551,6 +628,7 @@ a {
 }
 
 .main-navigation {
+  padding-top: 50px;
   min-height: 95px;
   background-color: transparent;
 }
@@ -716,6 +794,22 @@ a {
   background-color:#ffffff;
 }
 
+.container-1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.container-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color:#ffffff;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -727,7 +821,7 @@ a {
 .slider {
   position: relative;
   background-color: #eeeeee;
-
+  margin-top: -30px;
 }
 
 .slider-controls {
@@ -775,6 +869,10 @@ a {
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
+}
+
+.slider-item p {
+  text-transform: none;
 }
 
 .slider-item:nth-child(1) {
@@ -826,8 +924,8 @@ a {
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 27px;
-
+  margin-bottom: 25px;
+  text-transform: none;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -836,14 +934,13 @@ a {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
-.button {
+.slider-item-button {
   display: block;
   width: 240px;
-  padding: 13px 0;
-
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -933,6 +1030,7 @@ a {
 .range-filter {
   width: 260px;
   margin-top: 49px;
+  margin-bottom: 58px;
 }
 
 .filter-item legend {
@@ -962,6 +1060,8 @@ a {
   width: 70%;
   height: 2px;
   background: #00ca74;
+  margin-left: 0%;
+
 }
 
 .range-controls .toggle {
@@ -979,11 +1079,11 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 55px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 115px;
+  left: 160px;
 }
 
 .price-controls label {
@@ -1024,9 +1124,9 @@ a {
   background-position: center;
   align-items: center;
   justify-content: center;
-  margin-bottom: 76px;
+  margin-bottom: 69px;
   background-size: cover;
- }
+}
 
 /*Магазин - подчеркивание*/
 .site-navigation-current::after {
@@ -1035,6 +1135,8 @@ a {
   width: 74px;
   height: 2px;
   background-color: #fb565a;
+  position: absolute;
+  top: 58px;
 }
 /* Фильтр checkbox*/
 .perfect input {
@@ -1049,6 +1151,7 @@ a {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
+  margin-right: 7px;
 }
 
 .perfect input:checked ~ .checkbox-item {
@@ -1067,6 +1170,8 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  text-transform: none;
+  margin-bottom: 17px;
 }
 
 .perfect label {
@@ -1082,7 +1187,7 @@ a {
 
 .radio-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
@@ -1099,7 +1204,9 @@ a {
 .radio-container label {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-transform: none;
+
 }
 
 .radio-item:hover,
@@ -1117,6 +1224,7 @@ a {
 /*иконки соц сетей*/
 .footer-social ul {
   list-style: none;
+  margin-left: -41px;
 }
 
 /*сетка базовая*/
@@ -1144,10 +1252,11 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 560px;
+  width: 440px;
   background-color: #eeeeee;
   flex-wrap: wrap;
-  margin-left: 119px;
+  margin-left: 25px;
+  justify-content: space-between ;
 }
 
 .basket-navigation {
@@ -1163,7 +1272,7 @@ a {
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 0px;
   background-color: #eeeeee;
 }
 
@@ -1207,11 +1316,12 @@ a {
 .container-about {
   width: 1160px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0px 0px;
   background-color: #ffffff;
-  margin-bottom: 142px;
+  /*margin-bottom: 110px;*/
   display: flex;
   justify-content: space-between;
+
 }
 
 .about-us {
@@ -1220,6 +1330,7 @@ a {
 
 .statistics {
   width: 360px;
+  margin-top: -47px;
 }
 
 .client-list {
@@ -1229,26 +1340,49 @@ a {
   margin: 0 auto;
   padding: 0 ;
   background-color: #ffffff;
+  margin-left: 31px;
 
 
 }
 
 .client-item {
   width: 260px;
+  position: relative;
 }
 
+.client-item:first-child {
+  margin-top: 120px;
+}
+
+.client-item:nth-child(2) {
+  margin-top: 104px;
+  margin-left: -3px;
+}
+
+.client-item:nth-child(3) {
+  margin-top: 109px;
+  margin-left: 16px;
+}
+
+.client-item:last-child {
+  margin-top: 110px;
+  margin-right: -10px;
+}
+
+
 .contacts {
-  display: block;
+  display: flex;
   background-color: #ffffff;
   padding-left: 50px;
   padding-top: 55px;
-  padding-bottom: 46px;
-  margin-right: 52%;
-  padding-right: 55px;
+  width: 319px;
+  height: 308px;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .main-footer {
-  margin-top: 126px;
+  margin-top: 120px;
   background-color: #ffffff;
 }
 
@@ -1301,19 +1435,28 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .basket-navigation a {
   display: block;
-  padding: 25px 20px;
+  padding: 25px 0px;
   vertical-align: middle;
 }
-.basket-navigation .basket-link {
-  padding-left: 26px;
+
+.site-navigation a {
   position: relative;
+}
+
+.basket-navigation .basket-link {
+  /*padding-left: 26px;*/
+  position: relative;
+}
+
+.basket-link {
+  padding-right: -20px;
 }
 
 .basket-link::before {
   content: "";
   position: absolute;
   top: 32px;
-  left: 5px;
+  left: -37px;
   width: 16px;
   height: 18px;
   background-image: url("../img/basket.svg");
@@ -1329,8 +1472,9 @@ input[type="radio"].visually-hidden {
 .social-button a {
   display: flex;
   flex-direction: column;
-  padding: 25px 25px;
+  padding: 23px 23px;
   vertical-align: middle;
+  margin-right: 12px;
 }
 
 .social-button-vk,
@@ -1432,11 +1576,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-container {
   width: 760px;
-  margin-left: 15px;
+  margin-left: 101px;
 }
 
 .page-title {
-  padding-bottom: 116px;
+  padding-bottom: 87px;
+  text-transform: none;
+  margin-top: 47px;
 }
 
 .filters {
@@ -1481,6 +1627,8 @@ input[type="radio"].visually-hidden {
 
 
 /*Красные прочерки на главной*/
+
+
 .about-us-options-list li::after {
   content: "";
   display: block;
@@ -1488,8 +1636,8 @@ input[type="radio"].visually-hidden {
   height: 2px;
   background-color: #fb565a;
   position: absolute;
-  margin-left: -40px;
-  margin-top: -10px;
+  margin-left: -35px;
+  margin-top: -12px;
 }
 
 .filters-post{
@@ -1503,7 +1651,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   border-radius: 5%;
   border: none;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .filters-post:hover,
@@ -1539,7 +1687,13 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.catalog-item:hover .catalog-header {
+  opacity: 1;
+  }
 
+ .catalog-item:hover .catalog-item-info {
+  opacity: 1;
+  }
 
 .catalog-item-info:hover,
 .catalog-item-info:focus .catalog-item{
@@ -1554,22 +1708,51 @@ input[type="radio"].visually-hidden {
 
 
 
-.info-active {
-  opacity: 1;
-}
+
 
 /*статистика*/
 
-.statistics-list {
+.statistic-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
-  flex-wrap: wrap;
-  width: 360px;
-  padding: 0;
-  flex-direction: row;
-  justify-content: flex-start;
+  padding-top: 40px;
 }
 
+.statistic-item {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.statistic-item li:last-child {
+  margin-left: 0px;
+}
+
+.statistic-number {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin-left: 0px;
+}
+
+}
+.statistic-percent {
+  font-size: 50%;
+  line-height: 50%;
+}
+
+.statistic-titl {
+  text-transform: none;
+  display: flex;
+  padding-top: 15px;
+  line-height: 20px;
+}
+
+/*
 .statistics-percent {
   width: 100px;
   flex-wrap: wrap;
@@ -1587,7 +1770,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   flex-wrap: wrap;
   margin-bottom: 10px;
-}
+}*/
 
 /*форма*/
 
@@ -1600,7 +1783,7 @@ input[type="radio"].visually-hidden {
   padding-right: 100px;
   position: fixed;
   top: 350px;
-  left: 320px;
+  left: 520px;
   box-shadow: 10px 30px 15px #6f7070;
 }
 
@@ -1678,19 +1861,19 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.form-type,
+.form-date {
+  padding: 0 0;
+}
+
+.form-type {
+  margin-bottom: 28px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+.filters-data legend {
+  margin-bottom: 15px;
+}
 
 
 
