@@ -112,22 +112,22 @@
           <ul class="client-list">
             <li class="client-item">
               <a class="client-htmlakademy" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-1.png.png" width="199" height="68" alt="Htmlacademy">
+                <img src="img/logo-1.png" width="199" height="68" alt="Htmlacademy">
               </a>
             </li>
             <li class="client-item">
               <a class="client-barbershop" href="http://barbershop-borodinski.webflow.io/">
-                <img src="img/logo-2.png.png" width="209" height="90"alt="barbershop">
+                <img src="img/logo-2.png" width="209" height="90"alt="barbershop">
               </a>
             </li>
             <li class="client-item">
               <a class="client-pink" href="https://pink.ru/">
-                <img src="img/logo-3.png.png"  width="185" height="52" alt="pink">
+                <img src="img/logo-3.png"  width="185" height="52" alt="pink">
               </a>
             </li>
             <li class="client-item">
               <a class="client-mishka" href="https://mishka.ru/">
-                <img src="img/logo-4.png.png"  width="173" height="84" alt="mishka">
+                <img src="img/logo-4.png"  width="173" height="84" alt="mishka">
               </a>
             </li>
           </ul>
@@ -178,17 +178,23 @@
               <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
-        <section class="feedback">
+        <section class="feedback visually-hidden">
+          <button class="close-btn" type="button">Закрыть</button>
           <h2>Напишите нам</h2>
-          <button class="close-form" type="button">Закрыть</button>
-          <form classs="feedback" action="https://echo.htmlacademy.ru" method="post">
-            <label for="username">Ваше имя</label>
-            <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
-            <label for="usermail">Ваш e-mail</label>
-            <input type="email" name="email" id="usermail" placeholder="email@example.com">
-            <label for="usercomment">Текст письма</label>
-            <textarea name="comment" id="usercomment" rows="6" cols="30" placeholder="В свободной форме"></textarea>
-            <button value="feedback-data" type="submit" formmethod="GET" >Отправить</button>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="input">
+              <label for="username">Ваше имя</label>
+              <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
+            </p>
+            <p class="input">
+              <label for="usermail">Ваш e-mail</label>
+              <input type="email" name="email" id="usermail" placeholder="email@example.com">
+            </p>
+            <p class="textarea">
+              <label for="usercomment">Текст письма</label>
+              <textarea name="comment" id="usercomment" rows="6" cols="30" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="feedback-data" type="submit">Отправить</button>
           </form>
         </section>
       </footer>
