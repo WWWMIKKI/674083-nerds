@@ -12,7 +12,7 @@
       <h1 class="visually-hidden">Дизайн-cтудия Нёрдс</h1>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" heigt="65" alt="Логип студии Нёрдс">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логип студии Нёрдс">
         </a>
           <ul class="site-navigation">
               <li><a href="info.html">Студия</a></li>
@@ -32,35 +32,37 @@
           <section class="filters">
             <h2 class="visually-hidden">Фильтры</h2>
             <form class="filters-data" action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value">
+              <fieldset>
               <legend>СТОИМОСТЬ:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                    </div>
+                    <button class="toggle toggle-min"></button>
+                    <button class="toggle toggle-max"></button>
                   </div>
-                  <button class="toggle toggle-min"></button>
-                  <button class="toggle toggle-max"></button>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                </div>
-              </div>
+              </fieldset>
               <fieldset class="form-type" >
                 <legend>СЕТКА</legend>
                 <div class="radio-container">
                   <label tabindex="0">
-                    <input type="radio" name="grid" value="Адаптивная" id="adaptive" checked>
+                    <input type="radio" name="grid" value="Адаптивная"  checked>
                     <span class="radio-item"></span>
                     Адаптивная
                   </label>
                   <label tabindex="0">
-                    <input type="radio" name="grid" value="Адаптивная" id="adaptive" checked>
+                    <input type="radio" name="grid" value="Адаптивная" checked>
                     <span class="radio-item"></span>
                     Фиксированная
                   </label>
                   <label tabindex="0">
-                    <input type="radio" name="grid" value="Адаптивная" id="adaptive" checked>
+                    <input type="radio" name="grid" value="Адаптивная" checked>
                     <span class="radio-item"></span>
                     Резиновая
                   </label>
@@ -70,27 +72,27 @@
                 <legend>ОСОБЕННОСТИ</legend>
                 <div class="perfect">
                   <label tabindex="0">
-                    <input type="checkbox" id="slider" checked>
+                    <input type="checkbox" checked>
                     <span class="checkbox-item"></span>
                     Слайдер
                   </label>
                   <label tabindex="0">
-                    <input type="checkbox" id="slider" >
+                    <input type="checkbox">
                     <span class="checkbox-item"></span>
                     Блок преимуществ
                   </label>
                   <label tabindex="0">
-                    <input type="checkbox" id="slider" checked >
+                    <input type="checkbox" checked >
                     <span class="checkbox-item"></span>
                     Новости
                   </label>
                   <label tabindex="0">
-                    <input type="checkbox" id="slider" >
+                    <input type="checkbox" >
                     <span class="checkbox-item"></span>
                     Галерея
                   </label>
                   <label tabindex="0">
-                    <input type="checkbox" id="slider" >
+                    <input type="checkbox" >
                     <span class="checkbox-item"></span>
                     Корзина
                   </label>
@@ -108,11 +110,11 @@
                 <li class="sort-type"><a class="sort-type-link" href="#">ПО ТИПУ</a></li>
                 <li class="sort-name"><a class="sort-name-link" href="#">ПО НАЗВАНИЮ</a></li>
                 <ul class="up-down">
-                  <ul class="up-down">
-                    <li class="sort-down"><a class="sort-down-link active-link" href="#"><span class="visually-hidden">ПО УБЫВАНИЮ</span></a></li>
-                    <li class="sort-up"><a class="sort-up-link" href="#"><span class="visually-hidden">ПО ВОЗРАСТАНИЮ</span></a></li>
-                  </ul>
-                </ul>
+            </ul>
+            <ul class="up-down">
+              <li class="sort-down"><a class="sort-down-link active-link" href="#"><span class="visually-hidden">ПО УБЫВАНИЮ</span></a></li>
+              <li class="sort-up"><a class="sort-up-link" href="#"><span class="visually-hidden">ПО ВОЗРАСТАНИЮ</span></a></li>
+            </ul>
             </ul>
 
             <ul class="catalog-list">
@@ -233,7 +235,7 @@
         </div>
         <section class="feedback visually-hidden">
           <h2>Напишите нам</h2>
-          <form classs="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
             <label for="username">Ваше имя</label>
             <input type="text" name="user-name" id="username" placeholder="Имя Фамилия">
             <label for="usermail">Ваш e-mail</label>
